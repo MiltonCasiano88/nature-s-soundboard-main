@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hQ-dY-tH0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sih-EF-ale">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Nature's Soundboard">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="36"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sih-EF-ale" secondAttribute="trailing" id="BEn-Xo-WZw"/>
+                                    <constraint firstItem="sih-EF-ale" firstAttribute="top" secondItem="9hQ-dY-tH0" secondAttribute="top" id="D8y-os-bYP"/>
+                                    <constraint firstItem="sih-EF-ale" firstAttribute="leading" secondItem="9hQ-dY-tH0" secondAttribute="leading" id="sIO-nP-7Ce"/>
+                                    <constraint firstAttribute="bottom" secondItem="sih-EF-ale" secondAttribute="bottom" id="vLv-aU-L3J"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kEF-GJ-Oc2">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LPM-ys-0Cj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puM-wk-d68">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Birds">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-eU-Y3l">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Jungle">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o4T-bi-cAn">
+                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7N-Fr-M9m">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Weather">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euO-TF-cLo" userLabel="Ocean">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Ocean">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kEF-GJ-Oc2" firstAttribute="top" secondItem="9hQ-dY-tH0" secondAttribute="bottom" id="34p-Ad-HWS"/>
+                            <constraint firstItem="9hQ-dY-tH0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9HR-Df-iib"/>
+                            <constraint firstItem="9hQ-dY-tH0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IRq-Re-OFY"/>
+                            <constraint firstItem="kEF-GJ-Oc2" firstAttribute="top" secondItem="9hQ-dY-tH0" secondAttribute="bottom" id="LOC-pE-2ua"/>
+                            <constraint firstItem="kEF-GJ-Oc2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Oim-EI-1VI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kEF-GJ-Oc2" secondAttribute="bottom" id="heI-Dx-kmX"/>
+                            <constraint firstItem="kEF-GJ-Oc2" firstAttribute="height" secondItem="9hQ-dY-tH0" secondAttribute="height" multiplier="3" id="kbv-2s-CgA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kEF-GJ-Oc2" secondAttribute="trailing" id="pxY-lL-ddB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hQ-dY-tH0" secondAttribute="trailing" id="zZG-Lb-UBb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="69"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RlU-BV-8lb">
+            <objects>
+                <viewController id="Fe7-32-BF9" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ucl-sS-FWD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-Q0-0dB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJo-wa-pKP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Birds">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="36"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="JJo-wa-pKP" secondAttribute="bottom" id="NWX-Vp-Wyx"/>
+                                    <constraint firstItem="JJo-wa-pKP" firstAttribute="leading" secondItem="mYs-Q0-0dB" secondAttribute="leading" id="XdG-2z-Siw"/>
+                                    <constraint firstItem="JJo-wa-pKP" firstAttribute="top" secondItem="mYs-Q0-0dB" secondAttribute="top" id="YVP-hI-rHf"/>
+                                    <constraint firstAttribute="trailing" secondItem="JJo-wa-pKP" secondAttribute="trailing" id="xnY-hf-x2W"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-5C-Mis">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-5b-2XD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGz-pq-xoM">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Loonies">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIU-t9-Rns">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Woodpecker">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-jd-SDh">
+                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmo-6w-B6b">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Blue Jay">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-59-l2C">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Hawk">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QvQ-ws-E8t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mYs-Q0-0dB" firstAttribute="top" secondItem="QvQ-ws-E8t" secondAttribute="top" id="6Rv-uk-SMW"/>
+                            <constraint firstItem="QvQ-ws-E8t" firstAttribute="trailing" secondItem="lgL-5C-Mis" secondAttribute="trailing" id="Csm-iy-eCA"/>
+                            <constraint firstItem="QvQ-ws-E8t" firstAttribute="trailing" secondItem="mYs-Q0-0dB" secondAttribute="trailing" id="P1B-er-jTX"/>
+                            <constraint firstItem="mYs-Q0-0dB" firstAttribute="leading" secondItem="QvQ-ws-E8t" secondAttribute="leading" id="Qk9-fE-fSs"/>
+                            <constraint firstItem="lgL-5C-Mis" firstAttribute="height" secondItem="mYs-Q0-0dB" secondAttribute="height" multiplier="3" id="Y8X-BC-vsF"/>
+                            <constraint firstItem="lgL-5C-Mis" firstAttribute="top" secondItem="mYs-Q0-0dB" secondAttribute="bottom" id="csd-wa-xm6"/>
+                            <constraint firstItem="lgL-5C-Mis" firstAttribute="top" secondItem="mYs-Q0-0dB" secondAttribute="bottom" id="ecO-fm-MiN"/>
+                            <constraint firstItem="lgL-5C-Mis" firstAttribute="leading" secondItem="QvQ-ws-E8t" secondAttribute="leading" id="o1d-44-Bxa"/>
+                            <constraint firstItem="QvQ-ws-E8t" firstAttribute="bottom" secondItem="lgL-5C-Mis" secondAttribute="bottom" id="uaQ-i8-rCl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yx4-92-I98" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="69"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cly-MW-fyZ">
+            <objects>
+                <viewController id="voC-oW-xFg" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ONc-h9-Hyk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy2-92-uw0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8l-Sd-w5F">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Jungle">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="36"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Z8l-Sd-w5F" secondAttribute="trailing" id="9k7-DX-gI6"/>
+                                    <constraint firstItem="Z8l-Sd-w5F" firstAttribute="top" secondItem="Oy2-92-uw0" secondAttribute="top" id="GIc-bk-3rN"/>
+                                    <constraint firstItem="Z8l-Sd-w5F" firstAttribute="leading" secondItem="Oy2-92-uw0" secondAttribute="leading" id="P3C-Ok-uld"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z8l-Sd-w5F" secondAttribute="bottom" id="Qhn-Du-9m2"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a4K-rM-h5j">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="buV-ap-O0f">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu9-ku-9H0">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Howler Monkeys">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Clickme2:" destination="voC-oW-xFg" eventType="touchUpInside" id="rbW-V3-rPH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2x-cS-yZt">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Chimpanzee">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe:" destination="voC-oW-xFg" eventType="touchUpInside" id="Hxv-Gd-7ph"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UFP-NH-p8x">
+                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWT-At-nVV">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Rainforest ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Clickme3:" destination="voC-oW-xFg" eventType="touchUpInside" id="JDA-jz-q5U"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTh-8D-Ton">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Birds and Monkeys">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe:" destination="voC-oW-xFg" eventType="touchUpInside" id="Mad-cO-Tfs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NrY-RB-JJi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a4K-rM-h5j" firstAttribute="top" secondItem="Oy2-92-uw0" secondAttribute="bottom" id="0ry-Qe-Ivn"/>
+                            <constraint firstItem="Oy2-92-uw0" firstAttribute="leading" secondItem="NrY-RB-JJi" secondAttribute="leading" id="HcJ-MG-0kV"/>
+                            <constraint firstItem="NrY-RB-JJi" firstAttribute="trailing" secondItem="a4K-rM-h5j" secondAttribute="trailing" id="Mor-NL-I40"/>
+                            <constraint firstItem="a4K-rM-h5j" firstAttribute="top" secondItem="Oy2-92-uw0" secondAttribute="bottom" id="N7j-4W-u0b"/>
+                            <constraint firstItem="Oy2-92-uw0" firstAttribute="top" secondItem="NrY-RB-JJi" secondAttribute="top" id="QuP-Hd-e3G"/>
+                            <constraint firstItem="a4K-rM-h5j" firstAttribute="height" secondItem="Oy2-92-uw0" secondAttribute="height" multiplier="3" id="fYr-bK-y5c"/>
+                            <constraint firstItem="NrY-RB-JJi" firstAttribute="bottom" secondItem="a4K-rM-h5j" secondAttribute="bottom" id="kJB-ji-17x"/>
+                            <constraint firstItem="NrY-RB-JJi" firstAttribute="trailing" secondItem="Oy2-92-uw0" secondAttribute="trailing" id="kmr-sr-WpI"/>
+                            <constraint firstItem="a4K-rM-h5j" firstAttribute="leading" secondItem="NrY-RB-JJi" secondAttribute="leading" id="yaN-0c-gIG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVC-jg-kkY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="69"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xwq-ej-KhP">
+            <objects>
+                <viewController id="uP6-Bx-lZF" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rOp-8y-egg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zn-jR-Zh0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fo-9d-ojh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Weather">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" metaFont="system" size="36"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0fo-9d-ojh" secondAttribute="trailing" id="2DB-vf-o4E"/>
+                                    <constraint firstItem="0fo-9d-ojh" firstAttribute="leading" secondItem="0zn-jR-Zh0" secondAttribute="leading" id="bXM-tA-xcY"/>
+                                    <constraint firstItem="0fo-9d-ojh" firstAttribute="top" secondItem="0zn-jR-Zh0" secondAttribute="top" id="rPx-BK-Dah"/>
+                                    <constraint firstAttribute="bottom" secondItem="0fo-9d-ojh" secondAttribute="bottom" id="zCk-lQ-tmy"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XuM-VU-fml">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wb5-PX-VV3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7m-Oq-eXi">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Thunder">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe5:" destination="uP6-Bx-lZF" eventType="touchUpInside" id="oHo-kP-rbA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjU-57-NKP">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Wind">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zgg-qp-7Ez">
+                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q93-WQ-7yT">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Peaceful Rain">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9u-Kc-nOh">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Tornado">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FgX-M5-nhG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XuM-VU-fml" firstAttribute="top" secondItem="0zn-jR-Zh0" secondAttribute="bottom" id="3sM-xv-gyX"/>
+                            <constraint firstItem="0zn-jR-Zh0" firstAttribute="leading" secondItem="FgX-M5-nhG" secondAttribute="leading" id="9jZ-xq-GIf"/>
+                            <constraint firstItem="FgX-M5-nhG" firstAttribute="bottom" secondItem="XuM-VU-fml" secondAttribute="bottom" id="EoO-4T-JxU"/>
+                            <constraint firstItem="XuM-VU-fml" firstAttribute="leading" secondItem="FgX-M5-nhG" secondAttribute="leading" id="JcJ-NB-OUA"/>
+                            <constraint firstItem="FgX-M5-nhG" firstAttribute="trailing" secondItem="0zn-jR-Zh0" secondAttribute="trailing" id="O3p-a3-4H5"/>
+                            <constraint firstItem="FgX-M5-nhG" firstAttribute="trailing" secondItem="XuM-VU-fml" secondAttribute="trailing" id="OFX-MP-NQs"/>
+                            <constraint firstItem="0zn-jR-Zh0" firstAttribute="top" secondItem="FgX-M5-nhG" secondAttribute="top" id="eeR-Ss-8p7"/>
+                            <constraint firstItem="XuM-VU-fml" firstAttribute="height" secondItem="0zn-jR-Zh0" secondAttribute="height" multiplier="3" id="ob5-U3-WhY"/>
+                            <constraint firstItem="XuM-VU-fml" firstAttribute="top" secondItem="0zn-jR-Zh0" secondAttribute="bottom" id="t3b-Dh-Yla"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PA9-c3-fkp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="69"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DWg-KE-JVv">
+            <objects>
+                <viewController id="sOt-TV-XzF" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PaU-nN-M9z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38J-KU-La5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-og-Z38">
+                                        <rect key="frame" x="156" y="0.0" width="102" height="204.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Ocean">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="36"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6mZ-og-Z38" firstAttribute="centerX" secondItem="38J-KU-La5" secondAttribute="centerX" id="6hi-yR-E6h"/>
+                                    <constraint firstItem="6mZ-og-Z38" firstAttribute="top" secondItem="38J-KU-La5" secondAttribute="top" id="Eo5-Sa-fC6"/>
+                                    <constraint firstAttribute="bottom" secondItem="6mZ-og-Z38" secondAttribute="bottom" id="ae3-hs-csJ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-3p-Ktp">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-0k-dW8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-bn-CYI">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Waves Crashing">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ5-v0-4F2">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Seagulls">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qlu-LR-nUR">
+                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KT-W5-ods">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Hurricane">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-29-0VO">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Peaceful Waves">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="taj-W0-ilt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SdX-3p-Ktp" firstAttribute="height" secondItem="38J-KU-La5" secondAttribute="height" multiplier="3" id="3ze-bZ-vD2"/>
+                            <constraint firstItem="SdX-3p-Ktp" firstAttribute="top" secondItem="38J-KU-La5" secondAttribute="bottom" id="FFH-ip-gmh"/>
+                            <constraint firstItem="SdX-3p-Ktp" firstAttribute="leading" secondItem="taj-W0-ilt" secondAttribute="leading" id="FrI-Je-Yv0"/>
+                            <constraint firstItem="taj-W0-ilt" firstAttribute="trailing" secondItem="SdX-3p-Ktp" secondAttribute="trailing" id="I3h-1z-E7J"/>
+                            <constraint firstItem="38J-KU-La5" firstAttribute="top" secondItem="taj-W0-ilt" secondAttribute="top" id="OMz-p6-yue"/>
+                            <constraint firstItem="38J-KU-La5" firstAttribute="leading" secondItem="taj-W0-ilt" secondAttribute="leading" id="U5b-o4-mDx"/>
+                            <constraint firstItem="SdX-3p-Ktp" firstAttribute="top" secondItem="38J-KU-La5" secondAttribute="bottom" id="eY4-jM-2AS"/>
+                            <constraint firstItem="taj-W0-ilt" firstAttribute="bottom" secondItem="SdX-3p-Ktp" secondAttribute="bottom" id="sJS-oU-LkT"/>
+                            <constraint firstItem="taj-W0-ilt" firstAttribute="trailing" secondItem="38J-KU-La5" secondAttribute="trailing" id="x0R-hc-7d6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyx-SM-naZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
