@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  nature's soundboard
 //
-//  Created by Matthew Morgan on 11/2/21.
+//  Created by Matthew Morgan and Milton Casiano on 11/2/21.
 //
 
 import UIKit
