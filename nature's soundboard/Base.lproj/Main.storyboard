@@ -60,6 +60,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="Fe7-32-BF9" kind="show" id="uxd-Ae-Z9V"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-eU-Y3l">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="307"/>
@@ -74,6 +77,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="voC-oW-xFg" kind="show" id="6eo-yY-c2b"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -93,6 +99,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="uP6-Bx-lZF" kind="show" id="qen-D8-Dem"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euO-TF-cLo" userLabel="Ocean">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
@@ -107,6 +116,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="sOt-TV-XzF" kind="show" id="gOe-qS-oIe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -138,14 +150,14 @@
             <objects>
                 <viewController id="Fe7-32-BF9" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ucl-sS-FWD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-Q0-0dB">
-                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJo-wa-pKP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Birds">
                                                 <attributes>
@@ -167,13 +179,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-5C-Mis">
-                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-5b-2XD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGz-pq-xoM">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -185,9 +197,12 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe14:" destination="Fe7-32-BF9" eventType="touchUpInside" id="cFP-xZ-KQH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIU-t9-Rns">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -199,14 +214,17 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe15:" destination="Fe7-32-BF9" eventType="touchUpInside" id="RQO-9a-4QP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-jd-SDh">
-                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmo-6w-B6b">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -218,9 +236,12 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe16:" destination="Fe7-32-BF9" eventType="touchUpInside" id="DE1-U5-876"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-59-l2C">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -232,6 +253,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Hawk:" destination="Fe7-32-BF9" eventType="touchUpInside" id="ugq-2o-sHe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -253,6 +277,7 @@
                             <constraint firstItem="QvQ-ws-E8t" firstAttribute="bottom" secondItem="lgL-5C-Mis" secondAttribute="bottom" id="uaQ-i8-rCl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="izw-5l-Al4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yx4-92-I98" sceneMemberID="firstResponder"/>
             </objects>
@@ -263,14 +288,14 @@
             <objects>
                 <viewController id="voC-oW-xFg" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ONc-h9-Hyk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy2-92-uw0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8l-Sd-w5F">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Jungle">
                                                 <attributes>
@@ -292,13 +317,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a4K-rM-h5j">
-                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="buV-ap-O0f">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu9-ku-9H0">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -315,7 +340,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2x-cS-yZt">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -334,10 +359,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UFP-NH-p8x">
-                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWT-At-nVV">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -354,7 +379,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTh-8D-Ton">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -390,6 +415,7 @@
                             <constraint firstItem="a4K-rM-h5j" firstAttribute="leading" secondItem="NrY-RB-JJi" secondAttribute="leading" id="yaN-0c-gIG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="F16-oY-gUf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVC-jg-kkY" sceneMemberID="firstResponder"/>
             </objects>
@@ -400,14 +426,14 @@
             <objects>
                 <viewController id="uP6-Bx-lZF" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOp-8y-egg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zn-jR-Zh0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fo-9d-ojh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Weather">
                                                 <attributes>
@@ -429,13 +455,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XuM-VU-fml">
-                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wb5-PX-VV3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7m-Oq-eXi">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -452,7 +478,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjU-57-NKP">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -464,14 +490,17 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe5:" destination="uP6-Bx-lZF" eventType="touchUpInside" id="BDi-iR-FHi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zgg-qp-7Ez">
-                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q93-WQ-7yT">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -483,9 +512,12 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe7:" destination="uP6-Bx-lZF" eventType="touchUpInside" id="StB-UQ-o71"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9u-Kc-nOh">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -497,6 +529,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe8:" destination="uP6-Bx-lZF" eventType="touchUpInside" id="eSO-Oe-Jpj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -518,6 +553,7 @@
                             <constraint firstItem="XuM-VU-fml" firstAttribute="top" secondItem="0zn-jR-Zh0" secondAttribute="bottom" id="t3b-Dh-Yla"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8cv-Mj-bkk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PA9-c3-fkp" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,14 +564,14 @@
             <objects>
                 <viewController id="sOt-TV-XzF" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PaU-nN-M9z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38J-KU-La5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-og-Z38">
-                                        <rect key="frame" x="156" y="0.0" width="102" height="204.5"/>
+                                        <rect key="frame" x="156" y="0.0" width="102" height="202"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Ocean">
                                                 <attributes>
@@ -556,13 +592,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-3p-Ktp">
-                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-0k-dW8">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-bn-CYI">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -574,9 +610,12 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe8:" destination="sOt-TV-XzF" eventType="touchUpInside" id="52o-GG-JHB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ5-v0-4F2">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -588,14 +627,17 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe10:" destination="sOt-TV-XzF" eventType="touchUpInside" id="Mh7-jf-OEy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qlu-LR-nUR">
-                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KT-W5-ods">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -607,9 +649,13 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe11:" destination="sOt-TV-XzF" eventType="touchUpInside" id="GBY-jl-t17"/>
+                                                    <action selector="ClickMe12:" destination="sOt-TV-XzF" eventType="touchUpInside" id="kLR-1a-ida"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-29-0VO">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -621,6 +667,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ClickMe13:" destination="sOt-TV-XzF" eventType="touchUpInside" id="qru-i3-K78"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -642,6 +691,7 @@
                             <constraint firstItem="taj-W0-ilt" firstAttribute="trailing" secondItem="38J-KU-La5" secondAttribute="trailing" id="x0R-hc-7d6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DdO-9l-5nc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pyx-SM-naZ" sceneMemberID="firstResponder"/>
             </objects>
