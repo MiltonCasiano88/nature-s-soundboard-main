@@ -22,8 +22,6 @@ class ViewController: UIViewController {
             
         }
         
-        
-        
         func playSound() {
             guard let url = Bundle.main.url(forResource: "birds and monkeys", withExtension: "mp3") else { return }
 
