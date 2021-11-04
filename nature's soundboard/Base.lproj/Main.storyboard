@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hQ-dY-tH0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="98.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sih-EF-ale">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="98.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Nature's Soundboard">
                                                 <attributes>
@@ -42,13 +42,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kEF-GJ-Oc2">
-                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <rect key="frame" x="44" y="98.5" width="808" height="294.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LPM-ys-0Cj">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="147"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puM-wk-d68">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -65,7 +65,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-eU-Y3l">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="307"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -84,10 +84,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o4T-bi-cAn">
-                                        <rect key="frame" x="0.0" y="307" width="414" height="306.5"/>
+                                        <rect key="frame" x="0.0" y="147" width="808" height="147.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7N-Fr-M9m">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -104,7 +104,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euO-TF-cLo" userLabel="Ocean">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="306.5"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -150,14 +150,14 @@
             <objects>
                 <viewController id="Fe7-32-BF9" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ucl-sS-FWD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-Q0-0dB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="98.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJo-wa-pKP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="98.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Birds">
                                                 <attributes>
@@ -179,13 +179,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-5C-Mis">
-                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
+                                <rect key="frame" x="44" y="98.5" width="808" height="294.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-5b-2XD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="147"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGz-pq-xoM">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -202,7 +202,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIU-t9-Rns">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -221,10 +221,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-jd-SDh">
-                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="147" width="808" height="147.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmo-6w-B6b">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -241,7 +241,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-59-l2C">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -288,14 +288,14 @@
             <objects>
                 <viewController id="voC-oW-xFg" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ONc-h9-Hyk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy2-92-uw0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="98.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8l-Sd-w5F">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="98.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Jungle">
                                                 <attributes>
@@ -317,13 +317,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a4K-rM-h5j">
-                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
+                                <rect key="frame" x="44" y="98.5" width="808" height="294.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="buV-ap-O0f">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="147"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu9-ku-9H0">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -340,7 +340,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2x-cS-yZt">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -359,10 +359,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UFP-NH-p8x">
-                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="147" width="808" height="147.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWT-At-nVV">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -379,7 +379,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTh-8D-Ton">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -426,14 +426,14 @@
             <objects>
                 <viewController id="uP6-Bx-lZF" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOp-8y-egg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zn-jR-Zh0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="98.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fo-9d-ojh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="98.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Weather">
                                                 <attributes>
@@ -455,13 +455,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XuM-VU-fml">
-                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
+                                <rect key="frame" x="44" y="98.5" width="808" height="294.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wb5-PX-VV3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="147"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7m-Oq-eXi">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -478,7 +478,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjU-57-NKP">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -497,10 +497,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zgg-qp-7Ez">
-                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="147" width="808" height="147.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q93-WQ-7yT">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -517,7 +517,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9u-Kc-nOh">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -564,14 +564,14 @@
             <objects>
                 <viewController id="sOt-TV-XzF" customClass="ViewController" customModule="nature_s_soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PaU-nN-M9z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38J-KU-La5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="98.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-og-Z38">
-                                        <rect key="frame" x="156" y="0.0" width="102" height="202"/>
+                                        <rect key="frame" x="353" y="0.0" width="102" height="98.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Ocean">
                                                 <attributes>
@@ -592,13 +592,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-3p-Ktp">
-                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
+                                <rect key="frame" x="44" y="98.5" width="808" height="294.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-0k-dW8">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="147"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-bn-CYI">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -615,7 +615,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ5-v0-4F2">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -634,10 +634,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qlu-LR-nUR">
-                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="147" width="808" height="147.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KT-W5-ods">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
@@ -655,7 +655,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-29-0VO">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="303"/>
+                                                <rect key="frame" x="404" y="0.0" width="404" height="147.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
