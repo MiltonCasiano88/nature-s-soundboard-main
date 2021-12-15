@@ -12,7 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
         
-    var player: AVAudioPlayer?
+    var player: AVAudioPlayer!
 
   // 3rd view controller buttons and sounds
         
@@ -29,11 +29,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -60,11 +58,8 @@ class ViewController: UIViewController {
                     try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                     try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                     player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -89,11 +84,9 @@ class ViewController: UIViewController {
                     try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                     try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                     player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -117,11 +110,9 @@ class ViewController: UIViewController {
                     try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                     try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                     player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -145,11 +136,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
             guard let player = player else { return }
 
@@ -172,11 +161,8 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
             guard let player = player else { return }
 
@@ -198,11 +184,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
             guard let player = player else { return }
 
@@ -224,11 +208,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
             guard let player = player else { return }
 
@@ -251,11 +233,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
             guard let player = player else { return }
 
@@ -269,7 +249,9 @@ class ViewController: UIViewController {
         @IBAction func seagulls(_ sender: UIButton) {
             
             playSound10()
+            
         }
+    
         func playSound10() {
             guard let url = Bundle.main.url(forResource: "seagulls", withExtension: "mp3") else { return }
 
@@ -277,11 +259,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -291,6 +271,7 @@ class ViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    
         @IBAction func hurricane(_ sender: UIButton) {
             
             playSound11()
@@ -303,11 +284,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -330,11 +309,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -357,11 +334,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -373,7 +348,9 @@ class ViewController: UIViewController {
             }
     
         @IBAction func woodpecker(_ sender: UIButton) {
+            
             playSound14()
+            
         }
     
         func playSound14() {
@@ -383,11 +360,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -397,10 +372,12 @@ class ViewController: UIViewController {
                 print(error.localizedDescription)
             }
             }
-        
+    
         @IBAction func bluejay(_ sender: UIButton) {
+            
             playSound15()
         }
+    
         func playSound15() {
             guard let url = Bundle.main.url(forResource: "blue jay", withExtension: "mp3") else { return }
 
@@ -408,11 +385,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -422,9 +397,13 @@ class ViewController: UIViewController {
                 print(error.localizedDescription)
             }
             }
+    
         @IBAction func Hawk(_ sender: UIButton) {
+            
             playSound16()
+            
         }
+    
         func playSound16() {
             guard let url = Bundle.main.url(forResource: "hawk", withExtension: "mp3") else { return }
 
@@ -432,11 +411,9 @@ class ViewController: UIViewController {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
                 try AVAudioSession.sharedInstance().setActive(true)
 
-                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                // The following line is required for the player to work on iOS 11. Change the file type accordingly//
                 player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
 
-                /* iOS 10 and earlier require the following line:
-                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
                 guard let player = player else { return }
 
@@ -446,4 +423,4 @@ class ViewController: UIViewController {
                 print(error.localizedDescription)
             }
             }
-            }
+}
