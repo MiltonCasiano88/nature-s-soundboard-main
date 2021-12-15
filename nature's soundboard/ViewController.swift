@@ -12,16 +12,17 @@ import AVFoundation
 class ViewController: UIViewController {
     
         
-    var player: AVAudioPlayer!
+    var player: AVAudioPlayer?
 
   // 3rd view controller buttons and sounds
+        @IBAction func clickMe(_ sender: UIButton) {
         
-        @IBAction func ClickMe(_ sender: UIButton ) {
             
           playSound()
             
         }
-        
+    
+    
         func playSound() {
             guard let url = Bundle.main.url(forResource: "birds and monkeys", withExtension: "mp3") else { return }
 
@@ -223,6 +224,7 @@ class ViewController: UIViewController {
     
     
         @IBAction func wavescrashing(_ sender: UIButton) {
+            
             playSound8()
         }
         
@@ -244,15 +246,15 @@ class ViewController: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
-        }
+    }
     
         @IBAction func seagulls(_ sender: UIButton) {
             
-            playSound10()
+            playSound11()
             
         }
     
-        func playSound10() {
+        func playSound11() {
             guard let url = Bundle.main.url(forResource: "seagulls", withExtension: "mp3") else { return }
 
             do {
@@ -274,10 +276,10 @@ class ViewController: UIViewController {
     
         @IBAction func hurricane(_ sender: UIButton) {
             
-            playSound11()
+            playSound12()
         }
     
-        func playSound11() {
+        func playSound12() {
             guard let url = Bundle.main.url(forResource: "hurricane", withExtension: "mp3") else { return }
 
             do {
@@ -295,14 +297,14 @@ class ViewController: UIViewController {
             } catch let error {
                 print(error.localizedDescription)
             }
-            }
+        }
 
         @IBAction func peacefulwaves(_ sender: UIButton) {
             
-            playSound12()
+            playSound13()
         }
     
-        func playSound12() {
+        func playSound13() {
             guard let url = Bundle.main.url(forResource: "peaceful waves", withExtension: "mp3") else { return }
 
             do {
@@ -320,14 +322,16 @@ class ViewController: UIViewController {
             } catch let error {
                 print(error.localizedDescription)
             }
-            }
+        }
 // 2nd View Controller as i did this in a weird order
     
         @IBAction func loonies(_ sender: UIButton) {
-            playSound13()
+            
+            playSound14()
+            
         }
     
-        func playSound13() {
+        func playSound14() {
             guard let url = Bundle.main.url(forResource: "loonies", withExtension: "mp3") else { return }
 
             do {
@@ -345,15 +349,15 @@ class ViewController: UIViewController {
             } catch let error {
                 print(error.localizedDescription)
             }
-            }
+        }
     
         @IBAction func woodpecker(_ sender: UIButton) {
             
-            playSound14()
+            playSound15()
             
         }
     
-        func playSound14() {
+        func playSound15() {
             guard let url = Bundle.main.url(forResource: "woodpecker", withExtension: "mp3") else { return }
 
             do {
@@ -371,14 +375,14 @@ class ViewController: UIViewController {
             } catch let error {
                 print(error.localizedDescription)
             }
-            }
+        }
     
         @IBAction func bluejay(_ sender: UIButton) {
             
-            playSound15()
+            playSound16()
         }
     
-        func playSound15() {
+        func playSound16() {
             guard let url = Bundle.main.url(forResource: "blue jay", withExtension: "mp3") else { return }
 
             do {
@@ -396,15 +400,15 @@ class ViewController: UIViewController {
             } catch let error {
                 print(error.localizedDescription)
             }
-            }
+        }
     
         @IBAction func Hawk(_ sender: UIButton) {
             
-            playSound16()
+            playSound17()
             
         }
     
-        func playSound16() {
+        func playSound17() {
             guard let url = Bundle.main.url(forResource: "hawk", withExtension: "mp3") else { return }
 
             do {
@@ -422,5 +426,5 @@ class ViewController: UIViewController {
             } catch let error {
                 print(error.localizedDescription)
             }
-            }
+        }
 }

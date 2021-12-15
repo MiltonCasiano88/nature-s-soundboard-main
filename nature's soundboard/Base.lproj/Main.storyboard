@@ -198,8 +198,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe14:" destination="Fe7-32-BF9" eventType="touchUpInside" id="cFP-xZ-KQH"/>
-                                                    <action selector="loonies:" destination="Fe7-32-BF9" eventType="touchUpInside" id="rTM-xX-dwB"/>
+                                                    <action selector="loonies:" destination="Fe7-32-BF9" eventType="touchUpInside" id="nOJ-7S-VrA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIU-t9-Rns">
@@ -216,7 +215,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe15:" destination="Fe7-32-BF9" eventType="touchUpInside" id="RQO-9a-4QP"/>
                                                     <action selector="woodpecker:" destination="Fe7-32-BF9" eventType="touchUpInside" id="FOh-XW-f5N"/>
                                                 </connections>
                                             </button>
@@ -239,7 +237,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe16:" destination="Fe7-32-BF9" eventType="touchUpInside" id="DE1-U5-876"/>
                                                     <action selector="bluejay:" destination="Fe7-32-BF9" eventType="touchUpInside" id="xAR-t1-DMF"/>
                                                 </connections>
                                             </button>
@@ -339,7 +336,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="Clickme2:" destination="voC-oW-xFg" eventType="touchUpInside" id="rbW-V3-rPH"/>
                                                     <action selector="howlermonkeys:" destination="voC-oW-xFg" eventType="touchUpInside" id="4We-c2-ZyP"/>
                                                 </connections>
                                             </button>
@@ -379,7 +375,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="Clickme3:" destination="voC-oW-xFg" eventType="touchUpInside" id="JDA-jz-q5U"/>
                                                     <action selector="rainforest:" destination="voC-oW-xFg" eventType="touchUpInside" id="mWd-rV-UKz"/>
                                                 </connections>
                                             </button>
@@ -397,7 +392,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe:" destination="voC-oW-xFg" eventType="touchUpInside" id="Mad-cO-Tfs"/>
+                                                    <action selector="clickMe:" destination="voC-oW-xFg" eventType="touchUpInside" id="wLW-ng-RcU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -479,8 +474,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe5:" destination="uP6-Bx-lZF" eventType="touchUpInside" id="oHo-kP-rbA"/>
-                                                    <action selector="thunder:" destination="uP6-Bx-lZF" eventType="touchUpInside" id="DNg-S5-M3B"/>
+                                                    <action selector="thunder:" destination="uP6-Bx-lZF" eventType="touchUpInside" id="m61-Im-3OS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjU-57-NKP">
@@ -620,7 +614,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe8:" destination="sOt-TV-XzF" eventType="touchUpInside" id="52o-GG-JHB"/>
                                                     <action selector="wavescrashing:" destination="sOt-TV-XzF" eventType="touchUpInside" id="nHq-Wp-vSe"/>
                                                 </connections>
                                             </button>
@@ -638,7 +631,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe10:" destination="sOt-TV-XzF" eventType="touchUpInside" id="Mh7-jf-OEy"/>
                                                     <action selector="seagulls:" destination="sOt-TV-XzF" eventType="touchUpInside" id="xNB-u3-ODg"/>
                                                 </connections>
                                             </button>
@@ -661,8 +653,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe11:" destination="sOt-TV-XzF" eventType="touchUpInside" id="GBY-jl-t17"/>
-                                                    <action selector="ClickMe12:" destination="sOt-TV-XzF" eventType="touchUpInside" id="kLR-1a-ida"/>
                                                     <action selector="hurricane:" destination="sOt-TV-XzF" eventType="touchUpInside" id="BFe-lm-FhY"/>
                                                 </connections>
                                             </button>
@@ -680,7 +670,6 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ClickMe13:" destination="sOt-TV-XzF" eventType="touchUpInside" id="qru-i3-K78"/>
                                                     <action selector="peacefulwaves:" destination="sOt-TV-XzF" eventType="touchUpInside" id="YfR-gU-Qu5"/>
                                                 </connections>
                                             </button>
